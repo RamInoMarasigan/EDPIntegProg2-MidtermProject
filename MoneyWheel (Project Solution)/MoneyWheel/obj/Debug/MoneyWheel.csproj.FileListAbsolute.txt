@@ -1,0 +1,16 @@
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MoneyWheel.csproj.AssemblyReference.cache
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MoneyWheel.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MainWindow.g.cs
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\App.g.cs
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MoneyWheel_MarkupCompile.cache
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MoneyWheel_MarkupCompile.lref
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\bin\Debug\MoneyWheel.exe.config
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\bin\Debug\MoneyWheel.exe
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\bin\Debug\MoneyWheel.pdb
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MainWindow.baml
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MoneyWheel.g.resources
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MoneyWheel.Properties.Resources.resources
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MoneyWheel.csproj.GenerateResource.cache
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MoneyWheel.csproj.CoreCompileInputs.cache
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MoneyWheel.exe
+C:\Users\Ram & Ethan\Desktop\MoneyWheel\MoneyWheel\obj\Debug\MoneyWheel.pdb

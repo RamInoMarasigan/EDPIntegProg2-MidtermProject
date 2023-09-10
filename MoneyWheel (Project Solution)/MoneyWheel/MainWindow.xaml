@@ -1,0 +1,88 @@
+﻿<Window x:Class="MoneyWheel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoneyWheel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="552" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Image x:Name="imgBackground" HorizontalAlignment="Center" Height="540" VerticalAlignment="Top" Width="800" Source="/MoneyWheel Frame (1920 × 1280 px) (1920 × 1290 px).png"/>
+
+        <Ellipse HorizontalAlignment="Left" Height="379" Margin="114,98,0,0" Stroke="Black" VerticalAlignment="Top" Width="409" StrokeThickness="4"/>
+        <Rectangle x:Name="r1" HorizontalAlignment="Left" Height="63" Margin="267,73,0,0" Stroke="Black" VerticalAlignment="Top" Width="104" StrokeThickness="2"/>
+        <Rectangle x:Name="r2" HorizontalAlignment="Left" Height="63" Margin="385,104,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+        <Rectangle x:Name="r3" HorizontalAlignment="Left" Height="63" Margin="436,178,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+        <Rectangle x:Name="r4" HorizontalAlignment="Left" Height="63" Margin="487,255,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+        <Rectangle x:Name="r5" HorizontalAlignment="Left" Height="63" Margin="436,333,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+        <Rectangle x:Name="r6" HorizontalAlignment="Left" Height="63" Margin="384,407,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+        <Rectangle x:Name="r7" HorizontalAlignment="Left" Height="63" Margin="267,439,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+        <Rectangle x:Name="r8" HorizontalAlignment="Left" Height="63" Margin="150,407,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+        <Rectangle x:Name="r9" HorizontalAlignment="Left" Height="63" Margin="99,333,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+        <Rectangle x:Name="r10" HorizontalAlignment="Left" Height="63" Margin="47,257,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+        <Rectangle x:Name="r11" HorizontalAlignment="Left" Height="63" Margin="99,178,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+        <Rectangle x:Name="r12" HorizontalAlignment="Left" Height="63" Margin="150,104,0,0" Stroke="Black" VerticalAlignment="Top" Width="104"/>
+
+        <Label x:Name="lblPointer" Content="pointer" HorizontalAlignment="Left" Margin="7,405,0,0" VerticalAlignment="Top" FontSize="30" Visibility="Visible" Opacity="0"/>
+        <Label x:Name="lblSpinsLeft" Content="spins" HorizontalAlignment="Left" Margin="7,467,0,0" VerticalAlignment="Top" FontSize="30" Opacity="0"/>
+
+        <Image HorizontalAlignment="Left" Height="273" Margin="507,173,0,0" VerticalAlignment="Top" Width="318" Source="/test.png" Stretch="Fill"/>
+        <Rectangle x:Name="r1SpinStrength" HorizontalAlignment="Left" Height="20" Margin="623,349,0,0" Stroke="Black" VerticalAlignment="Top" Width="85" StrokeThickness="2"/>
+        <Rectangle x:Name="r2SpinStrength" HorizontalAlignment="Left" Height="20" Margin="623,324,0,0" Stroke="Black" VerticalAlignment="Top" Width="85" StrokeThickness="2"/>
+        <Rectangle x:Name="r3SpinStrength" HorizontalAlignment="Left" Height="20" Margin="623,299,0,0" Stroke="Black" VerticalAlignment="Top" Width="85" StrokeThickness="2"/>
+        <Rectangle x:Name="r4SpinStrength" HorizontalAlignment="Left" Height="20" Margin="623,274,0,0" Stroke="Black" VerticalAlignment="Top" Width="85" StrokeThickness="2"/>
+        <Rectangle x:Name="r5SpinStrength" HorizontalAlignment="Left" Height="20" Margin="623,249,0,0" Stroke="Black" VerticalAlignment="Top" Width="85" StrokeThickness="2"/>
+
+        <Label x:Name="lblPowerLevel" Content="Power Level:" HorizontalAlignment="Left" Margin="618,194,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial" Height="25" Foreground="White"/>
+        <Label x:Name="lblSpinStrength" Content="0" HorizontalAlignment="Left" Margin="652,209,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Arial" Height="39" Foreground="White"/>
+
+        <Image x:Name="imgPowerUp" HorizontalAlignment="Left" Height="83" Margin="605,373,0,0" VerticalAlignment="Top" Width="76" Source="/Power Up Button1.png"/>
+        <Image x:Name="imgPowerDown" HorizontalAlignment="Left" Height="83" Margin="650,373,0,0" VerticalAlignment="Top" Width="76" Source="/Power Down Button1.png"/>
+        <Button x:Name="btnMorePower" Content="↑" HorizontalAlignment="Left" Margin="623,374,0,0" VerticalAlignment="Top" Width="40" Height="42" FontSize="25" Click="btnMorePower_Click" Opacity="0"/>        
+        <Button x:Name="btnLessPower" Content="↓" HorizontalAlignment="Left" Margin="668,374,0,0" VerticalAlignment="Top" Width="40" Height="42" FontSize="25" Click="btnLessPower_Click" Opacity="0"/>
+
+        <Button x:Name="btnSkip" Content="Skip" HorizontalAlignment="Left" Margin="3,344,0,0" VerticalAlignment="Top" Width="86" Height="42" FontSize="25" Click="btnSkip_Click" Opacity="0"/>
+
+        <Label x:Name="lblr1" Content="000" HorizontalAlignment="Left" Margin="301,93,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr2" Content="000" HorizontalAlignment="Left" Margin="420,124,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr3" Content="000" HorizontalAlignment="Left" Margin="471,198,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr4" Content="000" HorizontalAlignment="Left" Margin="522,276,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr5" Content="000" HorizontalAlignment="Left" Margin="471,352,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr6" Content="000" HorizontalAlignment="Left" Margin="420,428,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr7" Content="000" HorizontalAlignment="Left" Margin="301,458,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr8" Content="000" HorizontalAlignment="Left" Margin="185,428,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr9" Content="000" HorizontalAlignment="Left" Margin="134,352,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr10" Content="000" HorizontalAlignment="Left" Margin="82,276,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr11" Content="000" HorizontalAlignment="Left" Margin="134,198,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <Label x:Name="lblr12" Content="000" HorizontalAlignment="Left" Margin="185,124,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+
+        <Button x:Name="btnPurchaseEntry" Content="Purchase Entry" HorizontalAlignment="Left" Margin="586,449,0,0" VerticalAlignment="Top" Width="140" Height="32" FontSize="20" Click="btnPurchaseEntry_Click"/>
+
+        <Image x:Name="imgEntriesLeftFrame" HorizontalAlignment="Left" Height="158" Margin="488,3,0,0" VerticalAlignment="Top" Width="270" Source="/Stats Frame.png" Stretch="Fill"/>
+        <Label x:Name="lblEntriesLeft" Content="Entries Left: " HorizontalAlignment="Left" Margin="542,51,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" FontFamily="Arial" Width="114" Height="29"/>
+        <Label x:Name="lblEntriesLeftInt" Content="00" HorizontalAlignment="Left" Margin="656,51,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" FontFamily="Arial" Height="29"/>
+
+        <Label x:Name="lblPlayerCash" Content="Money Earned: " HorizontalAlignment="Left" Margin="512,81,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial" Foreground="White" Height="34" Width="144"/>
+        <Label x:Name="lblPlayerCashInt" Content="00" HorizontalAlignment="Left" Margin="656,81,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" FontFamily="Arial" Height="29"/>
+
+        <Image x:Name="imgJackpotFrame" HorizontalAlignment="Left" Height="83" Margin="40,3,0,0" VerticalAlignment="Top" Width="222" Source="/Stats Frame.png" Stretch="Fill"/>
+        <Label x:Name="lblJackpot" Content="Jackpot: " HorizontalAlignment="Left" Margin="58,25,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Arial" Width="102" Foreground="White"/>
+        <Label x:Name="lblJackpotInt" Content="00" HorizontalAlignment="Left" Margin="160,22,0,0" VerticalAlignment="Top" FontSize="25" Height="39" Foreground="White"/>
+
+        <Image x:Name="imgSpin" HorizontalAlignment="Left" Height="100" Margin="270,244,0,0" VerticalAlignment="Top" Width="96" Source="/Spin.png"/>
+        <Button x:Name="btnSpin" Content="Spin" HorizontalAlignment="Left" Margin="275,252,0,0" VerticalAlignment="Top" Width="87" Height="78" FontSize="25" Click="btnSpin_Click" Opacity="0"/>
+
+        <Image x:Name="imgR1" HorizontalAlignment="Left" Height="62" Margin="267,74,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR2" HorizontalAlignment="Left" Height="62" Margin="385,105,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR3" HorizontalAlignment="Left" Height="62" Margin="436,179,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR4" HorizontalAlignment="Left" Height="62" Margin="487,256,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR5" HorizontalAlignment="Left" Height="62" Margin="436,334,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR6" HorizontalAlignment="Left" Height="62" Margin="384,408,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR7" HorizontalAlignment="Left" Height="62" Margin="267,440,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR8" HorizontalAlignment="Left" Height="62" Margin="150,408,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR9" HorizontalAlignment="Left" Height="62" Margin="99,334,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR10" HorizontalAlignment="Left" Height="62" Margin="47,258,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR11" HorizontalAlignment="Left" Height="62" Margin="99,179,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+        <Image x:Name="imgR12" HorizontalAlignment="Left" Height="62" Margin="150,105,0,0" VerticalAlignment="Top" Width="104" Source="/Transparent Red Frame.png"/>
+    </Grid>
+</Window>
